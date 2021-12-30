@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    
+    <script src="https://kit.fontawesome.com/79cd4a257f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a181d4b200.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Tayan Chourasiya</div>
+        <ul class="navlist">
+            <li id="first" onclick="firstimage()" ><i class="fas fa-circle" style="color: rgb(255, 30, 0);"></i></li>
+            <li id="second"><i class="fas fa-circle"  style="color: rgb(0, 255, 166);"></i></li>
+            <li id="third"><i class="fas fa-circle" style="color:rgb(255, 0, 191);"></i></li>
+            <li id="forth"  ><i class="fas fa-circle"  style="color:gold;"></i></li>
+        </ul>
+    </nav>
+    <section class="slider">
+        <div class="slidercontainer">  
+            <div class="showSlide fade">  
+                <img src="https://image.shutterstock.com/image-photo/professional-development-programmer-working-programming-260nw-1233726961.jpg" />  
+                <div class="content">Image1</div>  
+            </div>  
+            <div class="showSlide fade">  
+                <img src="https://thumbs.dreamstime.com/b/close-up-hands-contemporary-website-developer-man-typing-writing-code-program-working-partner-office-147191492.jpg" />  
+                <div class="content">Image2</div>  
+            </div>  
+      
+            <div class="showSlide fade">
+                <img src="https://images.techopedia.com/images/uploads/web-developer.jpg" />  
+  
+                <div class="content">Image3</div>  
+            </div>  
+            <div class="showSlide fade">  
+                <img src="https://durhamcollege.ca/wp-content/uploads/Computer-Programmer.jpg" />  
+                <div class="content">Image4</div>  
+            </div>  
+            <a class="left" onclick="nextSlide(-1)">Previus</a>  
+            <a class="right" onclick="nextSlide(1)">Next</a>  
+        </div>  
+    
+     
+    </section>
+    <section class="image-para">
+        <div class="mydiv">
+            <img src="/WhatsApp25 Image 2021-12-14 at 18.21.04.jpeg" alt="">
+        <p>Good morning/afternoon,
+
+            Let me start by thanking you for this wonderful opportunity.
+            It's My pleasure to introduce myself.
+            I am from madya Pradesh and have completed my Bachelor's Degree in 2021 from Jiwaji University </p>        </div>
+        <div class="mydiv" style="margin-right:24px;">
+            <img src="/WhatsApp Image 2021-12-24 at 12.42.33.jpeg" alt="">
+<p>Hey' I am   Tayan Chourasiya</p>        </div>
+    </section>
+    <section class="image-video">
+        <div class="text">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis voluptatum ipsam asperiores eum ipsum delectus quis labore minima nostrum! Alias beatae, numquam iusto provident dolor dolores sint culpa facere voluptatem perferendis soluta ullam. Sunt praesentium molestiae, quis nam ratione tempore perferendis officia iure saepe necessitatibus?</p>
+        </div>
+        <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pKctjlxbFDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+
+    </section>
+    <section class="footer">
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tayan.chourasiya/"><i class="fab fa-facebook"></i></a>
+           <a href="https://www.instagram.com/official_chourasiya_jii/"> <i class="fab fa-instagram"></i></a>
+         <a href="https://wa.me/917898596985"><i class="fab fa-whatsapp"></i></i></a>
+            <a href="https://www.google.com/intl/en-GB/gmail/about/">            <i class="far fa-envelope-open"></i>
+</a>        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28632.37249851143!2d78.17764038890536!3d26.227676573477385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c68ff0a2df73%3A0xebff42167ed98c34!2sGwalior%20Fort!5e0!3m2!1sen!2sin!4v1635330962016!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact">
+            <h2>Buy me a Coffee</h2>
+        </div>
+    </footer>
+    <div class="div"><p>Developed with <span>❤</span> by Tayan chourasiya</p></div>
+</section>
+
+<script>  
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+
+    function nextSlide(n) {  
+        displaySlides(slide_index += n);  
+    }  
+
+    function currentSlide(n) {  
+        displaySlides(slide_index = n);  
+    }  
+
+    function displaySlides(n) {  
+        var i;  
+        var slides = document.getElementsByClassName("showSlide");  
+        if (n > slides.length) { slide_index = 1 }  
+        if (n < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.display = "none";  
+        }  
+        slides[slide_index - 1].style.display = "block";  
+    }  
+
+
+    function firstimage(){
+        document.getElementsByClassName('slider').open()
+    }
+
+ 
+</script>  
+
+</script>
+
+</body>
+</html>
